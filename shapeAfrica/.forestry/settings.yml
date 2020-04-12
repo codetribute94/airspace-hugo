@@ -8,7 +8,8 @@ sections:
   path: shapeAfrica/content
   label: Pages
   create: all
-  match: "*"
+  match: "**/*"
+  new_doc_ext: ".md"
 - type: directory
   path: shapeAfrica/content/english
   label: English
