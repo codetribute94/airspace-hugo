@@ -9,7 +9,7 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: shapeAfrica/content/english
   label: English
@@ -30,6 +30,7 @@ build:
   - HUGO_ENV=staging
   - HUGO_VERSION=0.63.2
   preview_output_directory: public
+  install_dependencies_command: npm install
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   working_dir: "/srv"
